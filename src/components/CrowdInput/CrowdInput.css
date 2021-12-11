@@ -1,0 +1,42 @@
+.input-crowd {
+  box-sizing: border-box;
+  outline: none;
+  border: transparent;
+  border-radius: 5px;
+  text-align: right;
+  width: 100%;
+  background: #f3f9fa url(./icon-person.svg) 15px no-repeat;
+  background-color: #f3f9fa;
+  padding: 0.8rem 1.5rem;
+  font-size: 2.4rem;
+  color: #00474b;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .input-crowd {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.input-crowd::placeholder {
+  color: #9ebbbd;
+}
+
+.total-crowd-form {
+  box-sizing: border-box;
+  margin-bottom: 3.5rem;
+}
+
+.total-crowd-form h2 {
+  font-size: 1.6rem;
+  line-height: 1rem;
+}
+
+.input-crowd:focus {
+  border: 2px solid #26c2ae;
+}
+
+.input-crowd.error {
+  border: 1px solid red;
+}

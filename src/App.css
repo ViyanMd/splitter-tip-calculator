@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 100%;
+  max-width: 54rem;
+  border-radius: 18px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 540px) {
+  .container {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    margin-top: 8rem;
+    justify-items: center;
   }
+
+  .header {
+    margin-bottom: 100px;
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: 92rem;
+    max-height: 48rem;
+    border-radius: 18px;
+    box-shadow: #99b9bd 0px 7px 25px;
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+
+  .container > * {
+    flex: 1 1 calc(100% / 2 - 3rem);
+  }
+
+  .calculations {
+    margin-right: 5rem;
+  }
+}
+
+.results {
+  box-sizing: border-box;
+  background-color: #00474b;
+  border-radius: 18px;
+}
+
+.header {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #5e7a7d;
 }

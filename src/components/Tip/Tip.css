@@ -1,0 +1,72 @@
+.tips {
+  margin-bottom: 3.6rem;
+}
+
+.tips h2 {
+  margin-bottom: 2rem;
+}
+
+.tip-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tip-options button {
+  background-color: #00474b;
+  color: #fff;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.tip-options button:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+  outline: transparent;
+}
+
+.tip-options button:focus {
+  background-color: #26c2ae;
+  color: #00474b;
+  outline: transparent;
+}
+
+.input-tip {
+  background-color: #f3f9fa;
+  color: #00474b;
+  text-align: right;
+  padding-right: 2rem;
+  transition: all 200ms ease-in-out;
+}
+
+.input-tip:focus {
+  outline: transparent;
+  border: 2px solid #26c2ae;
+}
+
+.input-tip::placeholder {
+  color: #547878;
+}
+
+.tip-options > * {
+  border: none;
+  width: 15rem;
+  height: 4.8rem;
+  flex: 1 1 calc(100% / 2 - 15px);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .tip-options > * {
+    width: 12rem;
+    flex: 1 1 calc(100% / 3 - 30px);
+  }
+
+  /* .input-tip {
+    text-align: center;
+    padding: 0;
+  } */
+}
