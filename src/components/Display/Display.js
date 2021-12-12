@@ -1,7 +1,7 @@
 import React from "react";
 import "./Display.css";
 
-const Display = ({ tipAmount, totalAmount }) => {
+const Display = ({ tipAmount, totalAmount, handleReset }) => {
   return (
     <div className="display-results">
       <div className="display-tip">
@@ -19,7 +19,12 @@ const Display = ({ tipAmount, totalAmount }) => {
         </div>
         <span className="total">${totalAmount}</span>
       </div>
-      <button className="reset-button" type="submit">
+      <button
+        className="reset-button"
+        type="submit"
+        onClick={handleReset}
+        disabled={tipAmount === "0.00"}
+      >
         Reset
       </button>
     </div>

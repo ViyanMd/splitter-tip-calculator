@@ -34,6 +34,15 @@
   margin-top: 2.5rem;
 }
 
+.reset-button:hover {
+  cursor: pointer;
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.reset-button:disabled {
+  background-color: #0d686d;
+  color: #00474b;
+}
 .display-results span {
   font-size: 3.2rem;
   font-weight: 700;
@@ -45,16 +54,27 @@
 }
 
 .category p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #7f9d9f;
   font-weight: 700;
   line-height: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
+  .display-results span {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #26c2ae;
+  }
+
+  .category p {
+    font-size: 1.6rem;
+    line-height: 1rem;
+  }
+
   .reset-button {
     padding: 1.3rem 1rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
 
   .category:first-child {

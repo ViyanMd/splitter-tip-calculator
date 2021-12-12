@@ -16,6 +16,12 @@ body {
   min-height: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 main {
   display: block;
 }

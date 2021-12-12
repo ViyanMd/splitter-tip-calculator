@@ -11,6 +11,7 @@
   font-size: 2.4rem;
   color: #00474b;
   font-weight: bold;
+  margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -37,6 +38,19 @@
   border: 2px solid #26c2ae;
 }
 
-.input-crowd.error {
-  border: 1px solid red;
+.error {
+  border: 2px solid red;
+}
+
+.total-crowd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-crowd-header p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  color: red;
 }
