@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/splitter-tip-calculator/static/css/main.ad32dbdd.chunk.css",
-    "main.js": "/splitter-tip-calculator/static/js/main.133284d1.chunk.js",
-    "main.js.map": "/splitter-tip-calculator/static/js/main.133284d1.chunk.js.map",
+    "main.css": "/splitter-tip-calculator/static/css/main.68339031.chunk.css",
+    "main.js": "/splitter-tip-calculator/static/js/main.0f116baf.chunk.js",
+    "main.js.map": "/splitter-tip-calculator/static/js/main.0f116baf.chunk.js.map",
     "runtime-main.js": "/splitter-tip-calculator/static/js/runtime-main.24ec2ddd.js",
     "runtime-main.js.map": "/splitter-tip-calculator/static/js/runtime-main.24ec2ddd.js.map",
     "static/js/2.f9f00ce8.chunk.js": "/splitter-tip-calculator/static/js/2.f9f00ce8.chunk.js",
     "static/js/2.f9f00ce8.chunk.js.map": "/splitter-tip-calculator/static/js/2.f9f00ce8.chunk.js.map",
     "index.html": "/splitter-tip-calculator/index.html",
-    "static/css/main.ad32dbdd.chunk.css.map": "/splitter-tip-calculator/static/css/main.ad32dbdd.chunk.css.map",
+    "static/css/main.68339031.chunk.css.map": "/splitter-tip-calculator/static/css/main.68339031.chunk.css.map",
     "static/js/2.f9f00ce8.chunk.js.LICENSE.txt": "/splitter-tip-calculator/static/js/2.f9f00ce8.chunk.js.LICENSE.txt",
     "static/media/BillInput.css": "/splitter-tip-calculator/static/media/icon-dollar.9f9be353.svg",
     "static/media/CrowdInput.css": "/splitter-tip-calculator/static/media/icon-person.65bfd204.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.24ec2ddd.js",
     "static/js/2.f9f00ce8.chunk.js",
-    "static/css/main.ad32dbdd.chunk.css",
-    "static/js/main.133284d1.chunk.js"
+    "static/css/main.68339031.chunk.css",
+    "static/js/main.0f116baf.chunk.js"
   ]
 }
