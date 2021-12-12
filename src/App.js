@@ -15,14 +15,9 @@ function App() {
   const [tipAmount, setTipAmount] = useState("0.00");
   const [totalAmount, setTotalAmount] = useState("0.00");
 
-  let validInput = true;
-
   useEffect(() => {
     if (!userInput.people) {
       return;
-    }
-    if (userInput.bill && userInput.people === 0) {
-      validInput = false;
     }
     let tipPerPerson = Number(
       (userInput.bill * userInput.tip * 0.01) / userInput.people
@@ -57,11 +52,7 @@ function App() {
       </div>
       <div className="container">
         <form className="calculations">
-          <Form
-            validInput={validInput}
-            handleUserInput={handleUserInput}
-            userInput={userInput}
-          />
+          <Form handleUserInput={handleUserInput} userInput={userInput} />
         </form>
         <div className="results">
           <Display

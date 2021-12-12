@@ -38,7 +38,7 @@
   border: 2px solid #26c2ae;
 }
 
-.error {
+.input.error {
   border: 2px solid red;
 }
 
