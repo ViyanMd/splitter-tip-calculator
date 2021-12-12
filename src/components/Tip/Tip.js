@@ -27,7 +27,7 @@ export default function Tip({ handleUserInput, userInput }) {
           inputMode="numeric"
           placeholder="Custom"
           className="input-tip"
-          value={userInput.tip}
+          // value={userInput.tip}
           onChange={handleUserInput}
           onFocus={handleUserInput}
         />
