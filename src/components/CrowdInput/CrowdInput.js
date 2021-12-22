@@ -6,6 +6,9 @@ function CrowdInput({ handleUserInput, userInput }) {
     <div className="total-crowd-form">
       <div className="total-crowd-header">
         <h2>Number of people</h2>
+        {userInput.bill > 0 && userInput.tip > 0 && userInput.people == 0 && (
+          <p>Can't be zero</p>
+        )}
       </div>
       <input
         type="text"

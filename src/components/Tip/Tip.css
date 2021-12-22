@@ -31,6 +31,12 @@
   outline: transparent;
 }
 
+.tip-options button:active {
+  background-color: #26c2ae;
+  color: #00474b;
+  outline: transparent;
+}
+
 .input-tip {
   background-color: #f3f9fa;
   color: #00474b;

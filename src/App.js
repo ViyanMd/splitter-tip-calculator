@@ -5,9 +5,9 @@ import Display from "./components/Display/Display";
 import { ReactComponent as Logo } from "./media/logo.svg";
 
 const initialState = {
-  bill: "",
-  tip: "",
-  people: "",
+  bill: 0,
+  tip: 0,
+  people: 0,
 };
 
 function App() {
@@ -19,11 +19,12 @@ function App() {
     if (!userInput.people) {
       return;
     }
+    let tip = userInput.bill * userInput.tip * 0.01;
     let tipPerPerson = Number(
       (userInput.bill * userInput.tip * 0.01) / userInput.people
     ).toFixed(2);
     let billPerPerson = Number(
-      userInput.bill / userInput.people + userInput.tip / userInput.people
+      (userInput.bill + tip) / userInput.people
     ).toFixed(2);
     setTipAmount(tipPerPerson);
     setTotalAmount(billPerPerson);
@@ -31,7 +32,7 @@ function App() {
 
   const handleUserInput = (e) => {
     e.preventDefault();
-    let input = Number(e.target.value.replace(/%/, ""));
+    let input = Number(e.target.value);
     const { name } = e.target;
     setUserInput({
       ...userInput,
